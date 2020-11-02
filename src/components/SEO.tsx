@@ -12,13 +12,11 @@ Important <head> information https://www.ionos.com/digitalguide/websites/web-dev
 const SEO: React.FC = () => {
   const { title, metaTags } = useSelector((state: RootState) => state.SEO)
 
-  const createMetaTags = () => {
-    return metaTags.map(tag => <meta name={tag.name} content={tag.content} />)
-  }
+  const createMetaTags = () =>
+    metaTags.map(tag => <meta name={tag.name} content={tag.content} />)
 
   return (
     <Helmet>
-      <meta charSet="UTF-8" />
       {createMetaTags()}
       <title>{title}</title>
       <link

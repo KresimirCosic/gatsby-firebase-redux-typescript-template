@@ -1,13 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 
 export interface MetaTagData {
-  name:
-    | "author"
-    | "copyright"
-    | "keywords"
-    | "description"
-    | "robots"
-    | "viewport"
+  name: "author" | "copyright" | "keywords" | "description" | "robots"
   content: string
 }
 
@@ -29,10 +23,6 @@ const initialState: SEOData = {
       name: "keywords",
       content:
         "javascript, typescript, reactjs, gatsbyjs, redux, firebase, template, boilerplate",
-    },
-    {
-      name: "viewport",
-      content: "width=device-width, initial-scale=1.0",
     },
   ],
 }
