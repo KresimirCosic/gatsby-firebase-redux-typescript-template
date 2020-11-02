@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react"
 
+import "../styles/index.scss"
+
+import Message from "../components/message"
+
 const Home: React.FC = () => {
   const [status, setStatus] = useState("Loading...")
 
@@ -11,7 +15,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="page page-home">
-      <h1>Status: {status}</h1>
+      <Message data={status} />
     </div>
   )
 }
