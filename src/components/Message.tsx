@@ -1,6 +1,7 @@
 import React from "react"
+import {} from "@material-ui/core"
 
-interface MessageComponentProps {
+export interface MessageComponentProps {
   data: string
 }
 
