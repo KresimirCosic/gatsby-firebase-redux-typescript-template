@@ -23,7 +23,8 @@
 ```
 mkdir my-app
 cd my-app
-git clone https://github.com/KresimirCosic/gatsby-firebase-redux-typescript-template ./
+git init
+git pull https://github.com/KresimirCosic/gatsby-firebase-redux-typescript-template ./
 npm install
 ```
 
