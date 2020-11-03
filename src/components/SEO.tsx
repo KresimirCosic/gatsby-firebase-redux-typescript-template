@@ -13,7 +13,9 @@ const SEO: React.FC = () => {
   const { title, metaTags } = useSelector((state: RootState) => state.SEO)
 
   const createMetaTags = () =>
-    metaTags.map(tag => <meta name={tag.name} content={tag.content} />)
+    metaTags.map(tag => (
+      <meta key={tag.name} name={tag.name} content={tag.content} />
+    ))
 
   return (
     <Helmet>
